@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Alya AI</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" 
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container-fluid head-div text-white">
+        <section class="py-2">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <img src="./assets/logixgrid_logo.png" class="navbar-brand logo-img" />
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#alyaAINavbar" aria-controls="alyaAINavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="alyaAINavbar">
+                    <button class="btn btn-dark header-custom-btn cyan-color">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#04CFFF" class="bi bi-chat-dots" viewBox="0 0 16 18">
+                        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                      </svg>
+                      <span class="mx-1">Lets Talk Logistics Magic</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#04CFFF" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>
+                    </button>
+                    </div>
+                </div>
+              </nav>
+        </section>
+        <section class="py-lg-5">
+          <div class="banner-div p-lg-5 text-white">
+            <div class="col-8 col-lg-6 py-lg-5">
+            <h1 class="py-3">The World's First <span class="text-gradient">AI Agent</span> for Designing Logistics Businss Models.</h1>
+            <p class="pb-2">Exclusive. Intelligent. Built with 14 years of global logistics expertise.</p>
+            <button class="btn border-0 cta-button text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFF" class="bi bi-robot" viewBox="0 0 16 16">
+                <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
+                <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
+              </svg>
+              <span class="mx-1">Meet the Agent</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#FFF" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+            </button>
+          </div>
+          </div>
+        </section>
+        <section class="text-white p-2 p-lg-5">
+          <div class="container">
+            <div class="row">
+            <div class="col-5 py-3 px-5">
+              <h1>A New Era of <span class="cyan-color">Logistics Strategy</span></h1>
+            </div>
+            <div class="col-7 py-4 px-5 border border-light rounded colored-box-shadow">
+              <p class="mb-0">AI Agents are transforming industries. For logistics — complex, dynamic, global — this is the pioneer. Our Agent blends natural conversation with proven processes to build bespoke, profitable business plans.</p>
+            </div>
+            </div>
+          </div>
+        </section>
+        <section class="p-3 text-white p-lg-5">
+          <div class="container py-5">
+          <h1 class="text-center">
+            Your  Strategic <span class="purple-color">Co-Pilot</span>
+          </h1>
+            <div class="row py-5">
+              <div class="col-4">
+                <div class="col-12 border py-3 rounded text-center">
+                  <img src="./assets/strategic_1.png" class="py-4" />
+                  <h5>Understands You</h5>
+                  <p>Chat naturally to share your vision.</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col-12 border py-3 rounded text-center">
+                  <img src="./assets/strategic_2.png" class="py-4" />
+                  <h5>Designs Plan</h5>
+                  <p>From freight to fulfillment, crafted blueprints.</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col-12 border py-3 rounded text-center">
+                  <img src="./assets/strategic_3.png" class="py-4" />
+                  <h5>Delivers Insights</h5>
+                  <p>Processes, tools & profitability guidance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="p-3 text-white p-lg-5">
+          <div class="container py-5">
+            <div class="text-center pb-lg-5">
+            <p class="custom-heading py-2 px-3">
+              <img src="./assets/heading_icon_1.png" class="text-icon" />
+              <span class="mx-2">Interactive AI Experience</span>
+              <img src="./assets/heading_icon_2.png" class="text-icon" />
+            </p>
+            <h1>Ask. Explore. <span class="cyan-color">Design.</span></h1>
+            </div>
+            <div class="d-flex align-items-center py-lg-5">
+              <div class="col-5 pe-3">
+                <h2>
+                  Experience the Future of Logistics Planning
+                </h2>
+                <p class="py-3">
+                  See how our Al Agent transforms complex logistics challenges into actionable business strategies through natural conversation.
+                </p>
+              </div>
+              <div class="col-7">
+                <div class="col-12 border border-light rounded p-3">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <img src="./assets/alya_chat.png" />
+                      </div>
+                      <div class="ps-2">
+                        <p class="mb-0">
+                          Al Business Companion
+                        </p>
+                        <p class="mb-0">
+                          Online • Ready to assist
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <span class="circle-box bg-cyan rounded"></span>
+                      <span class="circle-box bg-purple rounded mx-1"></span>
+                      <span class="circle-box bg-pink rounded"></span>
+                    </div>
+                  </div>
+                  <hr>
+                  <form class="form text-white">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Your Name?</label>
+                      <input type="text" class="form-control custom-input" id="name" >
+                    </div>
+                    <div class="mb-4">
+                      <label for="businessMail" class="form-label">Business Email?</label>
+                      <input type="password" class="form-control custom-input" id="businessMail">
+                    </div>
+                    <div class="text-end">
+                      <div class="g-recaptcha" data-sitekey="6LdmQssrAAAAAOAxKuqeN737zn4hZdcsvJ7oJEsi"></div>
+                    <button type="submit" class="btn cta-button border-0 text-white ">
+                      Next
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#FFF" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>
+                    </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-lg-5 bg-blue-gradient">
+          <div class="container py-lg-5">
+            <div class="text-center text-white">
+            <h1 class="mb-3">Not Just an AI. <span class="cyan-color">AI Agent</span></h1>
+            <p>The world's first Al Agent specifically engineered for logistics business design.</p>
+            </div>
+            <div class="row py-5 px-lg-5 text-white">
+              <div class="col-4 position-relative">
+                <div class="col-11 mx-auto border py-3 rounded-5 text-center bg-voilet px-2">
+                  <img src="./assets/strategic_white_1.png" class="py-4" />
+                  <h5>Industry-Specific Intelligence</h5>
+                  <p>Purpose-built for logistics, not generic business advice.</p>
+                  <span class="arrow-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#3195F4" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="col-4 position-relative">
+                <div class="col-11 mx-auto border py-3 rounded-5 text-center bg-voilet px-2">
+                  <img src="./assets/strategic_white_2.png" class="py-4" />
+                  <h5>Tailored to Your Model</h5>
+                  <p>Customized strategies for your specific logistics niche.</p>
+                  <span class="arrow-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#3195F4" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col-11 mx-auto border py-3 rounded-5 text-center bg-voilet px-2">
+                  <img src="./assets/strategic_white_3.png" class="py-4" />
+                  <h5>Exclusive Early Access</h5>
+                  <p>Be among the first to leverage this pioneering technology.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-lg-5 text-center">
+          <div class="container py-lg-5">
+            <div class="text-center text-white">
+            <h1 class="mb-3">Built for Every<span class="purple-color">Logistics Model</span></h1>
+            </div>
+            <div class="row py-5 px-lg-5 text-white">
+              <div class="col-4 mb-5">
+                <div class="col-11 mx-auto border py-3 rounded-3 text-center px-2">
+                  <img src="./assets/logistic_model_1.png" class="py-4" />
+                  <p>Freight Forwarding</p>
+                </div>
+              </div>
+              <div class="col-4 mb-5">
+                <div class="col-11 mx-auto border py-3 rounded-3 text-center px-2">
+                  <img src="./assets/logistic_model_2.png" class="py-4" />
+                  <p>Courier & Express</p>
+                </div>
+              </div>
+              <div class="col-4 mb-5">
+                <div class="col-11 mx-auto border py-3 rounded-3 text-center px-2">
+                  <img src="./assets/logistic_model_3.png" class="py-4" />
+                  <p>eCommerce fulfillment</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col-11 mx-auto border py-3 rounded-3 text-center px-2">
+                  <img src="./assets/logistic_model_4.png" class="py-4" />
+                  <p>Rail Logistics</p>
+                  
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col-11 mx-auto border py-3 rounded-3 text-center px-2">
+                  <img src="./assets/logistic_model_5.png" class="py-4" />
+                  <p>Warehousing & Distribution</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col-11 mx-auto border py-3 rounded-3 text-center px-2">
+                  <img src="./assets/logistic_model_6.png" class="py-4" />
+                  <p>Cross-Border Trade</p>
+                </div>
+              </div>
+            </div>
+            <p class="mt-2">Our AI Agent understands the unique challenges and opportunities across all major logistics business models</p>
+          </div>
+        </section>
+        <section class="py-lg-5 text-center">
+          <div class="container py-lg-5">
+            <h1 class="mb-3">Design the Future of <span class="purple-color">Logistics</span> - with AI at your Side</h1>
+            <p>Our AI Agent understands the unique challenges and opportunities across all major logistics business models</p>
+            <div class="text-center py-4">
+              <button class="btn border-0 cta-button text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFF" class="bi bi-robot" viewBox="0 0 16 16">
+                  <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
+                  <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
+                </svg>
+                <span class="mx-1">Meet the Agent</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#FFF" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </button>
+              <button class="btn btn-dark header-custom-btn cyan-color ms-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#04CFFF" class="bi bi-chat-dots" viewBox="0 0 16 18">
+                  <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                  <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                </svg>
+                <span class="mx-1">Talk to Logixgrid</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#04CFFF" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+    </div>
+    <footer>
+      <div class="container-fluid px-lg-4 py-2 bg-white">
+        <div class="row border-bottom">
+          <div class="col-5">
+            <img src="./assets/logixgrid_logo.png" class="logo-img" />
+            <p>14+ years powering logistics in 26+ countries.</p>
+          </div>
+          <div class="col-7 d-flex align-items-center justify-content-end">
+            <ul class="d-flex" style="list-style: none;">
+              <li class="me-3"><a href="#" class="text-secondary text-decoration-none">About</a></li>
+              <li class="me-3"><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+              <li class="me-3"><a href="#" class="text-secondary text-decoration-none">LinkedIn</a></li>
+              <li><a href="#" class="text-secondary text-decoration-none">Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center pt-2">
+          <p class="text-secondary">© 2025 Logixgrid. All rights reserved. The future of logistics starts here.</p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

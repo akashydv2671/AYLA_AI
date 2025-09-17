@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  padding: 0;
+  margin: 0;
+}
+.logo-img{
+    width:10rem;
+}
+.head-div{
+    background-image: url('./assets/background/ayla_bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-div{
+    background-image: url('./assets/background/ayla_homepage_banner.png');
+    background-position: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%),
+    linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%),
+    linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%),
+    linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%),
+    linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+}
+.cyan-color{
+    color:#04CFFF !important;
+}
+.purple-color{
+    color:#9B5DE4 !important;
+}
+.pink-color{
+    color: #DA0D90 !important;
+}
+.bg-cyan{
+    background-color:#04CFFF !important;
+}
+.bg-purple{
+    background-color:#9B5DE4 !important;
+}
+.bg-pink{
+    background-color: #DA0D90 !important;
+}
+.bg-voilet{
+    background-color: #3f83f0;
+}
+.circle-box{
+    display: block;
+    width:8px;
+    height: 8px;
+}
+.text-icon{
+    width: 1rem;
+    height: 1rem;
+}
+.colored-box-shadow{
+    box-shadow: 8px 8px 8px 0 #352755, 
+              -8px -8px 12px 0 #352755;
+}
+.text-gradient{
+    background: linear-gradient(90deg, #21CCFE, #B257D8, #FD08A6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* For Chrome, Safari */
+    background-clip: text;                /* For Firefox */
+    color: transparent;
+}
+.cta-button{
+  background: linear-gradient(90deg, #3195F4, #6F48E4);
+}
+.custom-heading{
+    display: inline-block;
+    border:1px solid lightgray;
+    border-radius: 20px;
+    background-color: rgba(70, 59, 59, 0.377);
+}
+.custom-input{
+    background: transparent !important;
+    color: white !important;
+}
+.bg-blue-gradient{
+    background: linear-gradient(90deg, #3195F4, #6F48E4);
+}
+.arrow-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: 1.5px solid #52EAFD;
+    border-radius: 50%;
+    right: 0;
+    top: 45%;
+}
