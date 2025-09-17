@@ -1,5 +1,4 @@
 function updateBusinessType(node){
-    debugger
     let btnList= document.getElementById("businessType_list");
     let allBtns= btnList.querySelectorAll("button");
     allBtns.forEach((btn)=>{
