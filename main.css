@@ -34,6 +34,9 @@
     mask-position: center;
     mask-size: cover;
 }
+.custom-border{
+    border: 1px solid #3c3b3b !important;
+}
 .cyan-color{
     color:#04CFFF !important;
 }
@@ -42,6 +45,12 @@
 }
 .pink-color{
     color: #DA0D90 !important;
+}
+.green-color{
+    color: #15AEAE !important;
+}
+.bg-green{
+    background-color: #15AEAE !important;
 }
 .bg-cyan{
     background-color:#04CFFF !important;
@@ -65,8 +74,8 @@
     height: 1rem;
 }
 .colored-box-shadow{
-    box-shadow: 8px 8px 8px 0 #352755, 
-              -8px -8px 12px 0 #352755;
+    box-shadow: 8px 8px 38px 0 #352755, 
+              -8px -8px 38px 0 #352755;
 }
 .text-gradient{
     background: linear-gradient(90deg, #21CCFE, #B257D8, #FD08A6);
@@ -88,6 +97,14 @@
     background: transparent !important;
     color: white !important;
 }
+.form-control.custom-input::placeholder,
+.form-control.custom-input::-webkit-input-placeholder,
+.form-control.custom-input::-moz-placeholder,
+.form-control.custom-input:-ms-input-placeholder,
+.form-control.custom-input:-moz-placeholder {
+    color: white !important;
+    opacity: 1 !important;
+}
 .bg-blue-gradient{
     background: linear-gradient(90deg, #3195F4, #6F48E4);
 }
@@ -103,4 +120,14 @@
     border-radius: 50%;
     right: -3%;
     top: 45%;
+}
+.active-business-type{
+    background-color: #15AEAE !important;
+    color: white !important;
+}
+.active-business-type svg{
+    color: white !important;
+}
+.custom-background{
+    background: rgba(0,0,0,0.35);
 }

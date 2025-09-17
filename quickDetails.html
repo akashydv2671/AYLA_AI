@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Alya AI</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container-fluid head-div text-white" style="height:100vh">
+        <section class="py-2">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <img src="./assets/logixgrid_logo.png" class="navbar-brand logo-img" />
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#alyaAINavbar" aria-controls="alyaAINavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="alyaAINavbar">
+                    <button class="btn btn-dark header-custom-btn cyan-color custom-border">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#04CFFF" class="bi bi-chat-dots" viewBox="0 0 16 18">
+                        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                      </svg>
+                      <span class="mx-1">Lets Talk Logistics Magic</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#04CFFF" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>
+                    </button>
+                    </div>
+                </div>
+              </nav>
+        </section>
+        <section class="col-10 col-lg-9 mx-auto py-lg-5 mt-5">
+          <h3 class="text-center">Just a few quick details to fine-tune your logistics blueprint</h3>
+          <p class="text-center">Your country, shipment volume, and team size help us customize accurate workflows, metrics, and product recommendations tailored to your operations.</p>
+          <div class="my-5 p-4 custom-background colored-box-shadow custom-border rounded-3">
+            <form class="form text-white">
+                <div class="mb-3">
+                  <label for="country" class="form-label">What’s your Country ?</label>
+                  <select class="form-select form-select-sm mb-3 custom-input" id="country">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label class="form-label">Which best describes your current logistics operations?</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="logistics_operation_1" checked>
+                    <label class="form-check-label" for="logistics_operation_1">
+                        <strong>In the early stages</strong> – just getting started with logistics operations.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="logistics_operation_2">
+                    <label class="form-check-label" for="logistics_operation_2">
+                        <strong>Growing operations</strong> – structured processes in place with a small to mid-size team.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="logistics_operation_3">
+                    <label class="form-check-label" for="logistics_operation_3">
+                        <strong>At scale</strong> – established departments, tools, and multi-location logistics.
+                    </label>
+                  </div>
+                </div>
+                <div class="pt-3 text-center">
+                    <a class="btn bg-green text-white text-center rounded-5 my-3 text-center px-4">
+                        <span class="me-1">Start My Custom Logistics Plan</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="#FFF" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>
+                    </a>
+                    <h6 class="text-white mt-3"><i>In the next step, Alya AI will walk you through your workflow to create your personalized logistics blueprint</i></h6>
+                </div>
+              </form>
+          </div>
+        </section>
+        
+</body>
+</html>
