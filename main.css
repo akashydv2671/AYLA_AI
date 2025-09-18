@@ -9,12 +9,6 @@
 .logo-img{
     width:10rem;
 }
-.head-div{
-    background-image: url('./assets/background/ayla_bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 .banner-div{
     background-image: url('./assets/background/ayla_homepage_banner.png');
     background-position: right;
@@ -169,4 +163,56 @@
 .form-select::-webkit-scrollbar-thumb:hover {
     background: #666666;
 }
+.animated-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0d0d0d;
+  overflow: hidden;
+  z-index: -1;
+}
 
+/* Grid overlay */
+.animated-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(transparent 95%, rgba(255,255,255,0.05) 95%),
+    linear-gradient(90deg, transparent 95%, rgba(255,255,255,0.05) 95%);
+  background-size: 10px;
+  opacity: 0.5;
+}
+
+/* Floating circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,200,255,0.4), transparent 70%);
+  animation: blink 15s infinite ease-in-out;
+}
+
+.circle:nth-child(1) { width: 150px; height: 150px; top: 20%; left: 10%; animation-delay: 0s; }
+.circle:nth-child(2) { width: 100px; height: 100px; top: 60%; left: 70%; animation-delay: 3s; }
+.circle:nth-child(3) { width: 80px; height: 80px; top: 40%; left: 40%; animation-delay: 6s; }
+
+/* Floating squares */
+.square {
+  position: absolute;
+  width: 120px; height: 120px;
+  border: 1px solid rgba(0,200,255,0.3);
+  animation: spin 15s infinite ease-in-out;
+}
+
+.square:nth-child(4) { top: 5%; right: 5%; }
+.square:nth-child(5) { top: 70%; left: 5%; }
+
+@keyframes blink {
+  0%, 100% { opacity: 0.2; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
