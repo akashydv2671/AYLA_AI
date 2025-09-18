@@ -17,7 +17,7 @@
     min-height:10rem;
 }
 .custom-border{
-    border: 1px solid #3c3b3b !important;
+    border: 1px solid #3b3f47 !important;
 }
 .cyan-color{
     color:#04CFFF !important;
@@ -79,8 +79,12 @@
     background-color: rgba(70, 59, 59, 0.377);
 }
 .custom-input{
-    background: transparent !important;
+    background: #202020 !important;
     color: white !important;
+}
+.custom-input::placeholder {
+  color: #adadad !important;
+  opacity: 1 !important;
 }
 .form-control.custom-input::placeholder,
 .form-control.custom-input::-webkit-input-placeholder,
