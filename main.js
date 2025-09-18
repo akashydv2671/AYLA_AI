@@ -1,3 +1,28 @@
+
+function loginFormSubmit(e){
+    e.preventDefault();
+    document.getElementById("main_page").style.display="none";
+    document.getElementById("business_type_page").style.display="block";
+    document.getElementById("more_details_page").style.display="none";
+    document.getElementById("footer").style.display="none";
+}
+
+function businessTypeDetails(e){
+    e.preventDefault();
+    document.getElementById("main_page").style.display="none";
+    document.getElementById("business_type_page").style.display="none";
+    document.getElementById("more_details_page").style.display="block";
+    document.getElementById("footer").style.display="none";
+}
+
+function addMoreDetails(e){
+    e.preventDefault();
+    document.getElementById("main_page").style.display="none";
+    document.getElementById("business_type_page").style.display="none";
+    document.getElementById("more_details_page").style.display="none";
+    document.getElementById("footer").style.display="none";
+}
+
 function updateBusinessType(node){
     let btnList= document.getElementById("businessType_list");
     let allBtns= btnList.querySelectorAll("button");
