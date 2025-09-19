@@ -65,6 +65,19 @@ body {
     flex-grow: 1;
     line-height: 15px;
 }
+.blueprint{
+    background: #0f0f0f17;
+}
+.blueprint .workflow-step {
+    font-size: 18px !important;
+}
+.blueprint .workflow-step img {
+    width: 2rem !important;
+    height: 2rem !important;
+}
+.blueprint .workflow-arrow{
+  font-size: 4rem;
+}
 .workflow-step span{
     margin-top: 10px;
     text-align: center;
@@ -72,6 +85,7 @@ body {
 
 .workflow-step.active {
     color: var(--accent-teal);
+    font-weight: 600;
 }
 
 .workflow-arrow {
@@ -197,7 +211,9 @@ body {
     position: relative;
     padding: 10px;
 }
-
+.bg-blueprint{
+    background: #3b3f4757 !important;
+}
 .document-header {
     background: #3B3F47;
     padding: 10px;
@@ -286,11 +302,16 @@ body {
     right: 30px;
     background: var(--accent-teal);
     border: none;
-    padding: 12px 24px;
     border-radius: 8px;
     color: white;
     font-weight: 600;
     z-index: 1000;
+}
+
+.download-btn{
+    background: var(--accent-teal);
+    border: none;
+    color: white;
 }
 
 .resize-handle {
@@ -345,4 +366,71 @@ body {
     display: flex;
     align-items: end;
     flex-direction: column;
+}
+.animated-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0a;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  /* Grid overlay */
+  .animated-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(transparent 95%, rgba(255,255,255,0.05) 95%),
+      linear-gradient(45deg, transparent 5%, rgba(255,255,255,0.05) 5%),
+      linear-gradient(90deg, transparent 95%, rgba(255,255,255,0.05) 95%);
+    background-size: 50px 50px;
+    opacity: 0.3;
+  }
+  
+  /* Floating circles */
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,200,255,0.4), transparent 70%);
+    animation: blink 15s infinite ease-in-out;
+  }
+  
+  .circle:nth-child(1) { width: 150px; height: 150px; top: 20%; left: 10%; animation-delay: 0s; }
+  .circle:nth-child(2) { width: 100px; height: 100px; top: 60%; left: 70%; animation-delay: 3s; }
+  .circle:nth-child(3) { width: 80px; height: 80px; top: 40%; left: 50%; animation-delay: 6s; }
+  
+  /* Floating squares */
+  .square {
+    position: absolute;
+    width: 120px; height: 120px;
+    border: 1px solid rgba(0,200,255,0.3);
+    animation: spin 15s infinite ease-in-out;
+  }
+  
+  .square:nth-child(4) { top: 5%; right: 5%; }
+  .square:nth-child(5) { top: 70%; left: 5%; }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 0.5; transform: scale(0.9); }
+    50% { opacity: 1; transform: scale(1.1); }
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  .colored-box-shadow{
+    box-shadow: 8px 8px 38px 0 #352755, 
+              -8px -8px 38px 0 #352755;
+}
+.green-color{
+    color: #15AEAE !important;
+}
+.bg-green{
+    background-color: #15AEAE !important;
+}
+.border-bottom-dotted{
+    border-bottom: 2px dotted #15aeae80 !important;
 }
