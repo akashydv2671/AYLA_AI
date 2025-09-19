@@ -9,6 +9,15 @@
 .logo-img{
     width:10rem;
 }
+.sticky-navbar{
+    position: sticky !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.nav-colored { background-color:#000; }
+
 .banner-div{
     background-image: url('./assets/background/ayla_bg_banner.png');
     background-position: right;
